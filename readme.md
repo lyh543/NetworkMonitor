@@ -4,6 +4,9 @@
 
 理论上支持 Linux、Windows、Mac OS，但由于 scapy 对 Windows 支持较差，未在 Mac OS 上测试过，推荐在 Linux 上运行。
 
+![运行截图](https://lyh543.coding.net/p/pic-bed/d/pic-bed/git/raw/master/349ddd1a81f359e4a49f1ceb6764ce9dad442a6de477e536407b2a65762d9555.png)  
+
+
 ## 使用
 
 ### Windows
@@ -66,6 +69,9 @@ sudo python3 network_monitor.py
 
 * scapy 可能不能在 Windows 上监听 Wifi 流量，这是因为 Windows 内核不支持某些无线适配器。详见：https://www.winpcap.org/misc/faq.htm#Q-16
 * 本程序也可能不能在其他设备上监听 Wifi 流量，仅支持 Ethernet，因为作者没有设备用于测试。
-* 即使所有都正确配置了，scapy 可能仍无法在 Windows 上正确运行。对此，官方推荐改用 Linux Live CD 进行测试。详见：https://scapy.readthedocs.io/en/latest/installation.html#windows。
+* 即使所有都正确配置了，scapy 可能仍无法在 Windows 上正确运行。对此，官方推荐改用 Linux Live CD 进行测试。详见：https://scapy.readthedocs.io/en/latest/installation.html#windows
 
 > If really nothing seems to work, consider skipping the Windows version and using Scapy from a Linux Live CD – either in a virtual machine on your Windows host or by booting from CDROM.
+
+* scapy 在流量负载较大时会出现漏包的现象，详见：https://linux.die.net/man/1/scapy
+
